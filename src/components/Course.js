@@ -18,15 +18,22 @@ const Course = props => {
           />
 
           <CardContent>
-            <Typography gutterBottom variant="headline" component="h2">
+            <Typography variant="h5" padding={20}>
               {props.course.fields.title}
             </Typography>
-            <Typography component="p">
-              {props.course.fields.description}
+            <Typography variant="body2" component="p" style={{ textAlign: "left", padding: "20px" }}>
+              {props.course.fields.description.content[0].content[0].value}
             </Typography>
           </CardContent>
           <CardActions>
-              <Button size="small" color="primary" href={props.course.fields.url} target="_blank">GO TO COURSE</Button>
+            <Button
+              size="small"
+              color="primary"
+              href={props.course.fields.url}
+              target="_blank"
+            >
+              GO TO COURSE
+            </Button>
           </CardActions>
         </Card>
       ) : null}
