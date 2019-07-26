@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
 
 const NavBar = () => {
-    return(
-        <div>
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="title" color="inherit">
-                        React & Material-UI Book List application
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-        </div>
-    )
-}
+  return (
+    <div>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="title" color="inherit">
+            React & Material-UI Book List application
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+};
 
 export default NavBar;
-
